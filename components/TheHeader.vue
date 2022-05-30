@@ -4,7 +4,7 @@
       <img :src="pretty" alt="pretty-girl" />
     </div>
     <div
-      class="header-content flex flex-col justify-between sm:px-16 sm:py-12 w-[45%] h-full absolute right-0 top-0 bg-white"
+      class="header-content flex flex-col justify-between md:px-16 md:py-12 py-8 px-10 w-[45%] h-full absolute right-0 top-0 bg-white"
     >
       <h1 class="c-logo">
         <img :src="logo" class="logo" alt="logo-hdp" />
@@ -16,22 +16,21 @@
         </h1>
         <p class="desc font-manr text-xl mt-3">
           Har yili o’quv markazimiz bitiruvchilarining 94% qismi o’zlari
-          xohlagan <br />
-          oliy o’quv yurtlarining talabasi bo’lib kelishmoqda
+          xohlagan oliy o’quv yurtlarining talabasi bo’lib kelishmoqda
         </p>
       </div>
-      <div class="c-down flex flex-row items-center space-x-8">
+      <div class="c-down flex flex-row items-center">
         <a
-          href="tel:+998999447613"
-          class="flex flex-row items-center transition-all hover:text-primary hover:fill-primary font-manr"
+          href="tel:+998996206600"
+          class="flex phone flex-row items-center mr-4 transition-all hover:text-primary hover:fill-primary font-manr"
         >
           <ion-icon name="call-outline" class="mr-1"></ion-icon>
-          +998 (99) 944 76-13
+          (99) 620 66-00
         </a>
         <a
           href="https://www.google.com/maps/place/HDP+o'quv+markazi/@41.5602665,60.6136889,17z/data=!4m5!3m4!1s0x41dfc9eba4e2c17f:0x785527c74348e063!8m2!3d41.5606037!4d60.6148047"
           target="_blank"
-          class="flex flex-row items-center transition-all hover:text-primary hover:fill-primary font-manr"
+          class="flex flex-row location items-center transition-all hover:text-primary hover:fill-primary font-manr"
         >
           <ion-icon name="location-outline" class="mr-1"></ion-icon>
           Urganch shahar
@@ -63,5 +62,55 @@ import logo from "~/assets/img/logo.svg";
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 1054px) {
+  .header-content {
+    width: 65%;
+  }
+  .header-part .header-img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 557px) {
+  .header-img {
+    display: none;
+  }
+  .header-content {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 443px) {
+  .header-content .title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .header-content .desc {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .c-down {
+    align-items: center;
+  }
+}
+
+@media (max-width: 426px) {
+  .header-content {
+    padding: 20px;
+  }
+  .c-down {
+    flex-direction: column;
+  }
+  .phone {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
 }
 </style>
