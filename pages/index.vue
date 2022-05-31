@@ -1,6 +1,7 @@
 <template>
   <div>
     <TheHeader />
+    <TheCourses />
   </div>
 </template>
 

@@ -11,6 +11,9 @@ module.exports = {
         primary: "#00B4D8",
         secondary: "#ADE8F4",
       },
+      gridTemplateColumns: {
+        auto: "repeat(auto-fit, minmax(200px, 1fr))",
+      },
     },
     fontFamily: {
       mont: ["Montserrat", "sans-serif"],

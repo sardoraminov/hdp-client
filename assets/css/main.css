@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.carousel__prev {
+  background-color: #00b4d8 !important;
+}
+
+.carousel__next {
+  background-color: #00b4d8 !important;
+}
