@@ -12,7 +12,7 @@
       </p>
     </div>
     <div class="part-courses mt-20 sm:px-6">
-      <Carousel :breakpoints="breakpoints" :wrap-around="true">
+      <Carousel :breakpoints="breakpoints" :wrap-around="true" :autoplay="2000">
         <Slide v-for="(course, index) in coursesInfo" :key="index">
           <TheItem
             :img="course.img"
