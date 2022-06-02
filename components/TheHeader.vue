@@ -111,6 +111,12 @@ const getVideo = () => {
   .c-down {
     align-items: center;
   }
+
+  .c-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 426px) {
