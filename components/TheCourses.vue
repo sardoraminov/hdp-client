@@ -33,7 +33,7 @@ import "vue3-carousel/dist/carousel.css";
 
 import course from "~/assets/img/course.png";
 import physics from "~/assets/img/physics.png";
-import math from "~/assets/img/math-colored.png ";
+import math from "~/assets/img/math-colored.png";
 import english from "~/assets/img/english-colored.png";
 import ielts from "~/assets/img/ielts.png";
 import mental from "~/assets/img/mental.png";
