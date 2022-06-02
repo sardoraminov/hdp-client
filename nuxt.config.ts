@@ -16,7 +16,8 @@ export default defineNuxtConfig({
   },
   vue: {
     compilerOptions: {
-      isCustomElement: (tag) => ["ion-icon"].includes(tag),
+      isCustomElement: (tag) =>
+        ["ion-icon"].includes(tag) || ["VueSlickCarousel"].includes(tag),
     },
   },
 });

@@ -18,7 +18,10 @@
           Har yili o’quv markazimiz bitiruvchilarining 94% qismi o’zlari
           xohlagan oliy o’quv yurtlarining talabasi bo’lib kelishmoqda
         </p>
-        <button @click="getVideo()" class="play-btn hover:shadow-lg font-manr flex flex-row items-center btn-grad mt-4">
+        <button
+          @click="getVideo()"
+          class="play-btn hover:shadow-lg font-manr flex flex-row items-center btn-grad mt-4"
+        >
           <ion-icon class="mr-3" name="play-outline"></ion-icon>
           Batafsil videoda ko’rish
         </button>
@@ -49,8 +52,8 @@ import logo from "~/assets/img/logo.svg";
 const router = useRouter();
 
 const getVideo = () => {
-  window.open("https://www.youtube.com/watch?v=v8LhIphSQC8", '_blank');
-}
+  window.open("https://www.youtube.com/watch?v=v8LhIphSQC8", "_blank");
+};
 </script>
 
 <style scoped>
@@ -124,7 +127,7 @@ const getVideo = () => {
 }
 
 .btn-grad {
-  background: linear-gradient(144.08deg, #00b4d8 30.74%, #59e3ff 292.61%);
+  background: linear-gradient(144.08deg, #00b4d8 30.74%, #03045e 292.61%);
   border-radius: 8px;
   padding: 20px;
   transition: 0.5s;
