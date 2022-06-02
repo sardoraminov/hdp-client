@@ -2,7 +2,8 @@
   <div>
     <TheHeader />
     <TheCourses />
-  </div>
+    <TheAdvanteges />
+  </div>  
 </template>
 
 <script setup>
