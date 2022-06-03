@@ -227,7 +227,7 @@
         viewBox="0 0 293 400"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        class="absolute -right-24 bottom-[640px] -z-10"
+        class="absolute -right-24 bottom-[760px] -z-10"
       >
         <circle cx="200" cy="200" r="200" fill="#00B4D8" fill-opacity="0.12" />
       </svg>
