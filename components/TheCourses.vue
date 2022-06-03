@@ -1,6 +1,6 @@
 <template>
-  <div id="courses" class="course-part mb-32 sm:px-4 px-3">
-    <div class="part-titles mt-10 text-center mb-8">
+  <div id="courses" class="course-part mb-32 sm:px-4">
+    <div class="part-titles mt-20 text-center mb-8 px-4">
       <h1 class="title text-[30px] font-extrabold font-mont inline-block">
         Kurslar
         <img :src="course" class="w-8 inline-block mb-2 ml-1" alt="course" />
@@ -11,7 +11,7 @@
         qilamiz
       </p>
     </div>
-    <div class="part-courses mt-20 sm:px-6 cursor-grab  ">
+    <div class="part-courses mt-24 sm:px-6 cursor-grab">
       <Carousel :breakpoints="breakpoints" :wrap-around="true" :autoplay="2000">
         <Slide v-for="(course, index) in coursesInfo" :key="index">
           <TheItem

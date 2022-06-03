@@ -4,7 +4,7 @@
       <img :src="pretty" alt="pretty-girl" />
     </div>
     <div
-      class="header-content flex flex-col justify-between md:px-16 md:py-12 py-8 sm:px-10 px-3 w-[45%] h-full absolute right-0 top-0 bg-white"
+      class="header-content flex flex-col justify-between md:px-16 md:py-12 py-8 sm:px-10 px-5 w-[45%] h-full absolute right-0 top-0 bg-white"
     >
       <h1 class="c-logo">
         <img :src="logo" class="logo" alt="logo-hdp" />
