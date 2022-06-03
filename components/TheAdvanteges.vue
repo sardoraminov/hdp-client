@@ -3,7 +3,7 @@
     id="advanteges"
     class="advantege-part overflow-hidden sm:px-20 px-4 pb-6"
   >
-    <div class="part-titles mt-10 text-center mb-8">
+    <div data-aos="fade-up" class="part-titles mt-10 text-center mb-8">
       <h1 class="title text-[30px] font-extrabold font-mont inline-block">
         Afzalliklar
         <img :src="champ" class="w-8 inline-block mb-2 ml-1" alt="champ" />
@@ -166,7 +166,6 @@
           r="50"
           transform="rotate(38.3471 85.2345 410.235)"
           fill="url(#paint0_linear_109_39)"
-          
         />
         <defs>
           <linearGradient
@@ -188,9 +187,7 @@
           class="section-title rounded-t bg-primary text-xl px-6 py-5 text-white flex flex-row items-center"
         >
           <ion-icon name="trophy-outline"></ion-icon>
-          <p class="ml-3 font-bold">
-            Yaratilgan sharoitlar
-          </p>
+          <p class="ml-3 font-bold">Yaratilgan sharoitlar</p>
         </div>
         <div
           class="section-body bg-white overflow-hidden rounded-b border-b-2 border-l-2 border-r-2 border-primary font-medium relative space-y-6 px-6 py-4 pb-6 text-[18px]"
@@ -344,10 +341,18 @@
 }
 </style>
 
-<script setup>
+<script>
 import book from "~/assets/img/book.png";
 import champ from "~/assets/img/champ.png";
-const openChannel = () => {
-  window.open("https://www.youtube.com/c/HDPOFFICIAL", "_blank");
+import aosMixin from "~/mixins/aos";
+export default {
+  name: "TheAdvantages",
+  mixins: [aosMixin],
+  setup(props) {
+    const openChannel = () => {
+      window.open("https://www.youtube.com/c/HDPOFFICIAL", "_blank");
+    };
+    return { openChannel, champ, book };
+  },
 };
 </script>
