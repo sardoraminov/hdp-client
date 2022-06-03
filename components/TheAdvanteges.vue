@@ -189,7 +189,7 @@
         >
           <ion-icon name="trophy-outline"></ion-icon>
           <p class="ml-3 font-bold">
-            O’quvchilarimiz uchun yaratilgan sharoitlar
+            Yaratilgan sharoitlar
           </p>
         </div>
         <div
