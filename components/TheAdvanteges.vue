@@ -1,5 +1,5 @@
 <template>
-  <div id="advanteges" class="advantege-part sm:px-20 px-4 pb-6">
+  <div id="advanteges" class="advantege-part overflow-hidden sm:px-20 px-4 pb-6">
     <div class="part-titles mt-10 text-center mb-8">
       <h1 class="title text-[30px] font-extrabold font-mont inline-block">
         Afzalliklar
