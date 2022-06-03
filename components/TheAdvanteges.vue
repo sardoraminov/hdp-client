@@ -11,14 +11,14 @@
       </p>
     </div>
     <div class="part-sections font-manr">
-      <section class="section overflow-hidden rounded border-2 border-primary mb-8">
+      <section class="section  mb-8">
         <div
           class="section-title bg-primary text-xl px-6 py-5 text-white flex flex-row items-center"
         >
           <ion-icon name="book-outline"></ion-icon>
           <p class="ml-3 font-bold">Darsliklar mavjudligi</p>
         </div>
-        <div class="section-body font-medium relative space-y-4 px-6 py-4 pb-6 text-base">
+        <div class="section-body overflow-hidden rounded border-2 border-primary font-medium relative space-y-4 px-6 py-4 pb-6 text-base">
           <p>
             HDP darsliklari o’quv markazimizning tajribali ustozlari tomonidan
             HDP metodikasiga asoslangan holda yozilgan. Bu kitoblardan
