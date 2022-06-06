@@ -2,10 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-.carousel__prev {
-  background-color: #00b4d8 !important;
+*::selection {
+  background: #c1f5fe;
 }
 
-.carousel__next {
-  background-color: #00b4d8 !important;
+.teacher, .teacher-img, img {
+  transition: all .4s ease;
+}
+
+.teacher:hover {
+  border-color: #00B4D8;
+}
+
+.teacher:hover .teacher-img {
+  background-color: #00B4D8;
+}
+
+.teacher:hover .teacher-img img {
+  transform: scale(1.2);
 }

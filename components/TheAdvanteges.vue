@@ -1,9 +1,9 @@
 <template>
   <div
     id="advanteges"
-    class="advantege-part overflow-hidden sm:px-20 px-4 pb-6"
+    class="advantege-part pb-6"
   >
-    <div data-aos="fade-up" class="part-titles mt-10 text-center mb-8">
+    <div data-aos="fade-up" class="part-titles mt-7 text-center mb-8">
       <h1 class="title text-[30px] font-extrabold font-mont inline-block">
         Afzalliklar
         <img :src="champ" class="w-8 inline-block mb-2 ml-1" alt="champ" />
@@ -19,7 +19,7 @@
         height="462"
         viewBox="0 0 306 462"
         fill="none"
-        class="absolute -right-28 -top-10"
+        class="absolute -right-40 -top-10"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path

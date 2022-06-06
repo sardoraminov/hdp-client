@@ -19,7 +19,7 @@
         <img class="w-10" :src="img" :alt="`course-${name}`" />
       </div>
     </div>
-    <div class="card-body p-5 text-center border border-gray">
+    <div class="card-body p-5 text-center border border-gray select-none">
       <h1 class="body-name mt-10 mb-4 font-mont text-xl font-extrabold">
         {{ name }}
       </h1>
