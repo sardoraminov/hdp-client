@@ -35,6 +35,7 @@
       <TheCourses />
       <TheAdvanteges />
       <TheTeam />
+      <TheQuestions />
     </main>
   </div>
 </template>

@@ -95,14 +95,14 @@
 import { Carousel, Navigation, Slide } from "vue3-carousel";
 
 import "vue3-carousel/dist/carousel.css";
-import team1 from "~/assets/img/jamoa-1.png";
-import team2 from "~/assets/img/jamoa-2.png";
-import team3 from "~/assets/img/jamoa-3.png";
-import team4 from "~/assets/img/jamoa-4.png";
-import team5 from "~/assets/img/jamoa-5.png";
-import team6 from "~/assets/img/jamoa-6.png";
-import team7 from "~/assets/img/jamoa-7.png";
-import team8 from "~/assets/img/jamoa-8.png";
+import team1 from "~/assets/img/jamoa-1.jpg";
+import team2 from "~/assets/img/jamoa-2.jpg";
+import team3 from "~/assets/img/jamoa-3.jpg";
+import team4 from "~/assets/img/jamoa-4.jpg";
+import team5 from "~/assets/img/jamoa-5.jpg";
+import team6 from "~/assets/img/jamoa-6.jpg";
+import team7 from "~/assets/img/jamoa-7.jpg";
+import team8 from "~/assets/img/jamoa-8.jpg";
 
 import teamImg from "~/assets/img/team.png";
 const team = [
