@@ -1,5 +1,5 @@
 <template>
-  <div id="questions" class="questions-part">
+  <div id="questions" class="questions-part pb-10">
     <div class="part-titles mt-20 text-center mb-8">
       <h1 class="title text-[30px] font-extrabold font-mont inline-block">
         Savollar
@@ -13,15 +13,55 @@
         O’quv markazimiz haqida bizga kelib tushadigan ba’zi savollarga javoblar
       </p>
     </div>
-    <div class="part-sections">
+    <div class="part-sections relative">
+      <svg
+        width="254"
+        height="481"
+        viewBox="0 0 254 481"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="absolute -left-24 top-[210px] -z-20"
+        data-v-4dab0eaa=""
+      >
+        <circle
+          cx="54"
+          cy="200"
+          r="200"
+          fill="#00B4D8"
+          fill-opacity="0.12"
+          data-v-4dab0eaa=""
+        ></circle>
+        <circle
+          cx="85.2345"
+          cy="410.235"
+          r="50"
+          transform="rotate(38.3471 85.2345 410.235)"
+          fill="url(#paint0_linear_109_39)"
+          data-v-4dab0eaa=""
+        ></circle>
+        <defs data-v-4dab0eaa="">
+          <linearGradient
+            id="paint0_linear_109_39"
+            x1="85.2345"
+            y1="360.235"
+            x2="135.235"
+            y2="493.235"
+            gradientUnits="userSpaceOnUse"
+            data-v-4dab0eaa=""
+          >
+            <stop stop-color="#00B4D8" data-v-4dab0eaa=""></stop>
+            <stop offset="1" stop-color="#98EEFF" data-v-4dab0eaa=""></stop>
+          </linearGradient>
+        </defs>
+      </svg>
       <section class="section overflow-hidden rounded mb-6 font-manr">
         <div
           @click="openOne(0)"
           :class="[
-            'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
+            'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t text-xl px-6 py-5 flex flex-row justify-between',
             opens[0] === true
               ? 'bg-primary text-white '
-              : 'bg-[#e9ecef] text-black',
+              : 'bg-white text-black border border-gray',
           ]"
         >
           <p class="ml-1 font-extrabold">
@@ -53,7 +93,7 @@
             'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
             opens[1] === true
               ? 'bg-primary text-white '
-              : 'bg-[#e9ecef] text-black',
+              : 'bg-white text-black border border-gray',
           ]"
         >
           <p class="ml-1 font-extrabold">
@@ -89,7 +129,7 @@
             'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
             opens[2] === true
               ? 'bg-primary text-white '
-              : 'bg-[#e9ecef] text-black',
+              : 'bg-white text-black border border-gray',
           ]"
         >
           <p class="ml-1 font-extrabold">Qanday o'qituvchilar ta'lim beradi?</p>
@@ -118,7 +158,7 @@
             'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
             opens[3] === true
               ? 'bg-primary text-white '
-              : 'bg-[#e9ecef] text-black',
+              : 'bg-white text-black border border-gray',
           ]"
         >
           <p class="ml-1 font-extrabold">Qachon natijalarni sezish mumkin?</p>
@@ -149,7 +189,7 @@
             'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
             opens[4] === true
               ? 'bg-primary text-white '
-              : 'bg-[#e9ecef] text-black',
+              : 'bg-white text-black border border-gray',
           ]"
         >
           <p class="ml-1 font-extrabold">HDP da qanday chegirmalar bor?</p>
@@ -180,7 +220,7 @@
             'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
             opens[5] === true
               ? 'bg-primary text-white '
-              : 'bg-[#e9ecef] text-black',
+              : 'bg-white text-black border border-gray',
           ]"
         >
           <p class="ml-1 font-extrabold">Markazda qanday kurslar mavjud?</p>
@@ -195,7 +235,12 @@
               : 'closed',
           ]"
         >
-          <p class="mb-2">14 yoshdan katta o'quvchilarimiz uchun Matematika, Ingliz tili va Fizika kurslarimiz hamda, 14 yoshdan kichik bolajonlarimiz uchun esa Matematika KIDS, Ingliz tili KIDS, Prezident maktabiga tayyorlov va Mental arifmetika kabi kurslarimiz mavjud</p>
+          <p class="mb-2">
+            14 yoshdan katta o'quvchilarimiz uchun Matematika, Ingliz tili va
+            Fizika kurslarimiz hamda, 14 yoshdan kichik bolajonlarimiz uchun esa
+            Matematika KIDS, Ingliz tili KIDS, Prezident maktabiga tayyorlov va
+            Mental arifmetika kabi kurslarimiz mavjud
+          </p>
         </div>
       </section>
     </div>

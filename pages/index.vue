@@ -1,7 +1,7 @@
 <template>
   <div>
     <TheHeader />
-    <main class="sm:px-20 px-4 relative overflow-hidden">
+    <main class="main-content sm:px-20 px-4 relative overflow-hidden">
       <svg
         width="239"
         height="481"
@@ -36,6 +36,7 @@
       <TheAdvanteges />
       <TheTeam />
       <TheQuestions />
+      <TheAboutExam />
     </main>
   </div>
 </template>
