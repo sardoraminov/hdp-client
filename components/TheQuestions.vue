@@ -82,6 +82,122 @@
           </button>
         </div>
       </section>
+      <section class="section overflow-hidden rounded mb-6 font-manr">
+        <div
+          @click="openOne(2)"
+          :class="[
+            'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
+            opens[2] === true
+              ? 'bg-primary text-white '
+              : 'bg-[#e9ecef] text-black',
+          ]"
+        >
+          <p class="ml-1 font-extrabold">Qanday o'qituvchilar ta'lim beradi?</p>
+          <button :class="['btn', opens[2] === true ? 'opened' : '']"></button>
+        </div>
+        <div
+          ref="2"
+          :class="[
+            'section-body transition-all overflow-hidden bg-white px-6  rounded-b font-medium relative text-[18px]',
+            opens[2] === true
+              ? 'opened border-primary border-b-2 border-l-2 border-r-2  py-4'
+              : 'closed',
+          ]"
+        >
+          <p class="mb-2">
+            Darslarni kamida 4-10 yillik tajribaga ega o'qituvchilar olib
+            boradi. Har bir guruhga kamida asosiy o'qituvchidan tashqari 2 ta
+            yordamchi o'qituvchi biriktiriladi.
+          </p>
+        </div>
+      </section>
+      <section class="section overflow-hidden rounded mb-6 font-manr">
+        <div
+          @click="openOne(3)"
+          :class="[
+            'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
+            opens[3] === true
+              ? 'bg-primary text-white '
+              : 'bg-[#e9ecef] text-black',
+          ]"
+        >
+          <p class="ml-1 font-extrabold">Qachon natijalarni sezish mumkin?</p>
+          <button :class="['btn', opens[3] === true ? 'opened' : '']"></button>
+        </div>
+        <div
+          ref="3"
+          :class="[
+            'section-body transition-all overflow-hidden bg-white px-6  rounded-b font-medium relative text-[18px]',
+            opens[3] === true
+              ? 'opened border-primary border-b-2 border-l-2 border-r-2  py-4'
+              : 'closed',
+          ]"
+        >
+          <p class="mb-2">
+            Yaxshi natijalarga erishish asosan, o'quvchilarning o'zlariga
+            bog'liq. Markazimizga o'zida intilish kuchli bo'lgan o'quvchilarni
+            qabul qilishimizning sababi ham shunda. Aynan har oy oxirida bo'lib
+            o'tadigan test sinovlari o'quvchining qay darajada ekanligi va
+            natijalarini aniqlab beradi.
+          </p>
+        </div>
+      </section>
+      <section class="section overflow-hidden rounded mb-6 font-manr">
+        <div
+          @click="openOne(4)"
+          :class="[
+            'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
+            opens[4] === true
+              ? 'bg-primary text-white '
+              : 'bg-[#e9ecef] text-black',
+          ]"
+        >
+          <p class="ml-1 font-extrabold">HDP da qanday chegirmalar bor?</p>
+          <button :class="['btn', opens[4] === true ? 'opened' : '']"></button>
+        </div>
+        <div
+          ref="4"
+          :class="[
+            'section-body transition-all overflow-hidden bg-white px-6  rounded-b font-medium relative text-[18px]',
+            opens[4] === true
+              ? 'opened border-primary border-b-2 border-l-2 border-r-2  py-4'
+              : 'closed',
+          ]"
+        >
+          <p class="mb-2">
+            Bizda chegirmalar turlari quyidagicha. Agar bir oiladan ikkita
+            farzand o'quv markazimizda ta'lim olsa, imtiyoz beriladi. Agar
+            o'quvchilar o'z tanishlari, do'stlari va yaqinlarini o'quv
+            markazimizga ta'lim olish uchun taklif qilsa ma'lum miqdorda
+            chegirmalar beriladi. Hozircha chegirmalarimiz faqat shular.
+          </p>
+        </div>
+      </section>
+      <section class="section overflow-hidden rounded mb-6 font-manr">
+        <div
+          @click="openOne(5)"
+          :class="[
+            'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
+            opens[5] === true
+              ? 'bg-primary text-white '
+              : 'bg-[#e9ecef] text-black',
+          ]"
+        >
+          <p class="ml-1 font-extrabold">Markazda qanday kurslar mavjud?</p>
+          <button :class="['btn', opens[5] === true ? 'opened' : '']"></button>
+        </div>
+        <div
+          ref="5"
+          :class="[
+            'section-body transition-all overflow-hidden bg-white px-6  rounded-b font-medium relative text-[18px]',
+            opens[5] === true
+              ? 'opened border-primary border-b-2 border-l-2 border-r-2  py-4'
+              : 'closed',
+          ]"
+        >
+          <p class="mb-2">14 yoshdan katta o'quvchilarimiz uchun Matematika, Ingliz tili va Fizika kurslarimiz hamda, 14 yoshdan kichik bolajonlarimiz uchun esa Matematika KIDS, Ingliz tili KIDS, Prezident maktabiga tayyorlov va Mental arifmetika kabi kurslarimiz mavjud</p>
+        </div>
+      </section>
     </div>
   </div>
 </template>
