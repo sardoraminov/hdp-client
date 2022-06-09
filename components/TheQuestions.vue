@@ -14,12 +14,14 @@
       </p>
     </div>
     <div class="part-sections">
-      <section class="section overflow-hidden rounded mb-8 font-manr">
+      <section class="section overflow-hidden rounded mb-6 font-manr">
         <div
           @click="openOne(0)"
           :class="[
-            'section-title relative hover:bg-primary-darken cursor-pointer rounded-t bg-primary text-xl px-6 py-5 text-white flex flex-row justify-between',
-            opens[0] === true ? 'bg-primary-darken  ' : '',
+            'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
+            opens[0] === true
+              ? 'bg-primary text-white '
+              : 'bg-[#e9ecef] text-black',
           ]"
         >
           <p class="ml-1 font-extrabold">
@@ -44,16 +46,18 @@
           </p>
         </div>
       </section>
-      <section class="section overflow-hidden rounded mb-8 font-manr">
+      <section class="section overflow-hidden rounded mb-6 font-manr">
         <div
           @click="openOne(1)"
           :class="[
-            'section-title relative hover:bg-primary-darken cursor-pointer rounded-t bg-primary text-xl px-6 py-5 text-white flex flex-row justify-between',
-            opens[1] === true ? 'bg-primary-darken  ' : '',
+            'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
+            opens[1] === true
+              ? 'bg-primary text-white '
+              : 'bg-[#e9ecef] text-black',
           ]"
         >
           <p class="ml-1 font-extrabold">
-            HDP o’quv markazida tahsil olgan o’quvchilarning natijalari qanday?
+            Qanday vaqtlarda kurslarga yozilish mumkin?
           </p>
           <button :class="['btn', opens[1] === true ? 'opened' : '']"></button>
         </div>
@@ -66,31 +70,44 @@
               : 'closed',
           ]"
         >
-          <p class="mb-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-            laborum distinctio, quisquam odio, quos impedit inventore explicabo
-            at voluptatum officiis ad? Odio voluptate tempore sed dolor saepe.
-            Eum vitae placeat, praesentium facilis architecto voluptatibus
-            delectus dolores neque aperiam ipsam blanditiis sapiente distinctio,
-            tempore aliquid aspernatur, harum quasi accusantium perferendis
-            veritatis pariatur ut illum a exercitationem! Corporis velit,
-            tempore minus aliquam, laboriosam voluptate quibusdam eius error,
-            quasi explicabo magnam dolorum molestiae accusamus porro ipsum in!
-            Obcaecati recusandae voluptatum magnam fugit ex delectus eligendi
-            ipsam esse debitis similique laboriosam ducimus ab quo, placeat quam
-            maxime nostrum laudantium sequi porro enim! Non, perferendis! Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Quos numquam
-            repellat eius error aliquam ipsam, accusantium fugit porro saepe,
-            impedit cumque illo voluptatem maxime ratione. Nostrum, quae. Cum
-            quia ut ullam aut alias maiores. Animi impedit vel consectetur
-            facilis quis.
+          <p class="mb-2">
+            O'quvchilar o'zlariga qulay vaqtlarda HDP filiallaridan biriga
+            borishi, yoki veb-saytimizdan tegishli kurslar bo'yicha online
+            imtihonlardan o'tib yozilishlari mumkin.
           </p>
+
+          <button class="exam-link flex flex-row items-center">
+            <ion-icon class="mr-3" name="rocket-outline"></ion-icon>
+            Mavjud imtihonlar
+          </button>
         </div>
       </section>
     </div>
   </div>
 </template>
 <style scoped>
+.exam-link ion-icon {
+  --ionicon-stroke-width: 38px;
+}
+.exam-link {
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  background: linear-gradient(144.08deg, #00b4d8 30.74%, #03045e 292.61%);
+  transition: all 0.4s ease;
+  background-size: 200% auto;
+  margin-bottom: 10px;
+  margin-top: 14px;
+}
+.exam-link:hover {
+  background-position: right center;
+}
+
+@media (max-width: 457px) {
+  .exam-link {
+    width: 100%;
+  }
+}
 .btn {
   outline: none;
   position: relative;
@@ -106,7 +123,7 @@
   transform: translate(-50%, -50%);
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: #000000;
   transition: all 0.8s ease;
 }
 .btn::after {
@@ -117,16 +134,23 @@
   transform: translate(-50%, -50%);
   width: 2px;
   height: 100%;
-  background-color: #fff;
+  background-color: #000000;
   transition: all 0.3s ease;
 }
 
 .btn.opened::after {
+  background: #fff;
   transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .btn.opened::before {
+  background: #fff;
   transform: translate(-50%, -50%) rotate(360deg);
+}
+
+.section-title:hover .btn::after,
+.section-title:hover .btn::before {
+  background-color: #fff;
 }
 
 .section-body {
@@ -172,7 +196,7 @@ export default {
       let el = this.$refs[index];
 
       this.opens[index] === true
-        ? (el.style.maxHeight = (el.scrollHeight + 52) + "px")
+        ? (el.style.maxHeight = el.scrollHeight + 52 + "px")
         : (el.style.maxHeight = 0);
     },
   },
