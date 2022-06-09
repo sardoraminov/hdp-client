@@ -38,6 +38,7 @@
       <TheQuestions />
       <TheAboutExam />
       <TheContact/>
+      <TheFooter />
     </main>
   </div>
 </template>

@@ -21,3 +21,7 @@
 .teacher:hover .teacher-img img {
   transform: scale(1.2);
 }
+
+html {
+  scroll-behavior: smooth;
+}

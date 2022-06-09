@@ -1,5 +1,5 @@
 <template>
-  <div id="contact" class="contact-part mt-12 pb-5">
+  <div id="contact" class="contact-part my-12 py-5">
     <TheToast v-show="toastOptions.show" :message="toastOptions.message" />
     <div class="part-titles mt-7 text-center mb-8">
       <h1 class="title text-[30px] font-extrabold font-mont inline-block">
@@ -88,7 +88,7 @@ let dFormat = `${d.getDate() > 9 ? d.getDate() : `0` + d.getDate()}/${
 
 const message = reactive({
   fullname: "",
-  phone: 0,
+  phone: '+998',
   text: "",
 
   fullmessage: computed(
