@@ -1,6 +1,10 @@
 <template>
   <div id="questions" class="questions-part pb-10">
-    <div class="part-titles mt-20 text-center mb-8">
+    <div
+      data-aos="fade-up"
+      data-aos-offset="200"
+      class="part-titles mt-20 text-center mb-8"
+    >
       <h1 class="title text-[30px] font-extrabold font-mont inline-block">
         Savollar
         <img
@@ -54,7 +58,7 @@
           </linearGradient>
         </defs>
       </svg>
-      <section class="section overflow-hidden rounded mb-6 font-manr">
+      <section data-aos="fade-up" data-aos-offset="100" class="section overflow-hidden rounded mb-6 font-manr">
         <div
           @click="openOne(0)"
           :class="[
@@ -86,7 +90,7 @@
           </p>
         </div>
       </section>
-      <section class="section overflow-hidden rounded mb-6 font-manr">
+      <section data-aos="fade-up" data-aos-offset="100" class="section overflow-hidden rounded mb-6 font-manr">
         <div
           @click="openOne(1)"
           :class="[
@@ -122,7 +126,7 @@
           </button>
         </div>
       </section>
-      <section class="section overflow-hidden rounded mb-6 font-manr">
+      <section data-aos="fade-up" data-aos-offset="100" class="section overflow-hidden rounded mb-6 font-manr">
         <div
           @click="openOne(2)"
           :class="[
@@ -151,7 +155,7 @@
           </p>
         </div>
       </section>
-      <section class="section overflow-hidden rounded mb-6 font-manr">
+      <section data-aos="fade-up" data-aos-offset="100" class="section overflow-hidden rounded mb-6 font-manr">
         <div
           @click="openOne(3)"
           :class="[
@@ -182,7 +186,7 @@
           </p>
         </div>
       </section>
-      <section class="section overflow-hidden rounded mb-6 font-manr">
+      <section data-aos="fade-up" data-aos-offset="100" class="section overflow-hidden rounded mb-6 font-manr">
         <div
           @click="openOne(4)"
           :class="[
@@ -213,7 +217,7 @@
           </p>
         </div>
       </section>
-      <section class="section overflow-hidden rounded mb-6 font-manr">
+      <section data-aos="fade-up" data-aos-offset="100" class="section overflow-hidden rounded mb-6 font-manr">
         <div
           @click="openOne(5)"
           :class="[

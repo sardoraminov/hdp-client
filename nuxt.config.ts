@@ -20,4 +20,5 @@ export default defineNuxtConfig({
         ["ion-icon"].includes(tag) || ["VueSlickCarousel"].includes(tag),
     },
   },
+  plugins: [{src: "~/mixins/aos.js", ssr: false}],
 });

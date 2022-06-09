@@ -4,7 +4,7 @@
     class="footer-part sm:px-20 px-4 bg-primary text-white py-6"
   >
     <div class="grid grid-cols-auto gap-5 gap-y-8">
-      <div class="links flex flex-col items-start">
+      <div data-aos="fade-up" class="links flex flex-col items-start">
         <p class="text-lg font-bold mb-4">Linklar</p>
         <a class="font-manr mb-2" href="#courses">Kurslar</a>
         <a class="font-manr mb-2" href="#advanteges">Afzalliklar</a>
@@ -13,7 +13,7 @@
         <a class="font-manr mb-2" href="#about-exam">Imtihonlar</a>
         <a class="font-manr" href="#contact">Aloqa</a>
       </div>
-      <div class="social flex flex-col items-start">
+      <div data-aos="fade-up" class="social flex flex-col items-start">
         <p class="text-lg font-bold mb-4">Ijtimoiy tarmoqlar</p>
         <a
           target="_blank"
@@ -44,7 +44,7 @@
           Youtube
         </a>
       </div>
-      <div class="address">
+      <div data-aos="fade-up" class="address">
         <p class="text-lg font-bold mb-4">Manzil va filiallarimiz</p>
         <p class="font-manr mb-2">1) Urganch Shahar, Amir Temur bog'i</p>
         <p class="font-manr mb-2">2) Urganch Shahar, eski arxiv</p>
@@ -55,7 +55,9 @@
     </div>
     <p class="mt-10 text-center">
       Made with &#9825; by
-      <a target="_blank" class="underline" href="https://dasturchioka.uz">dasturchioka</a>
+      <a target="_blank" class="underline" href="https://dasturchioka.uz"
+        >dasturchioka</a
+      >
     </p>
   </footer>
 </template>

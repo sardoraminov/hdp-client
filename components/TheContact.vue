@@ -1,7 +1,12 @@
 <template>
   <div id="contact" class="contact-part my-12 py-5">
     <TheToast v-show="toastOptions.show" :message="toastOptions.message" />
-    <div class="part-titles mt-7 text-center mb-8">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-offset="300"
+      class="part-titles mt-7 text-center mb-8"
+    >
       <h1 class="title text-[30px] font-extrabold font-mont inline-block">
         Aloqa
         <img :src="contact" class="w-8 inline-block mb-2 ml-1" alt="contact" />
@@ -12,16 +17,29 @@
       </p>
     </div>
     <form
+      data-aos="fade-up"
       @submit.prevent="(e) => sendMessage(e)"
       class="part-form border border-gray bg-[#E0F6FA] rounded p-4 px-8 border-primary"
     >
-      <p class="subtitle text-xl font-bold font-mont text-center mt-2">
+      <p
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="subtitle text-xl font-bold font-mont text-center mt-2"
+      >
         Murojaat yoki shikoyatlar uchun
       </p>
-      <p class="text-center font-manr">
+      <p
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="text-center font-manr"
+      >
         Ma'muriyatimiz sizga 24 soat ichida javob berishadi
       </p>
-      <div class="form-group flex flex-col mt-5">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="form-group flex flex-col mt-5"
+      >
         <label class="font-manr text-lg">Ismingiz:</label>
         <input
           v-model="message.fullname"
@@ -30,7 +48,11 @@
           class="form-control outline-none rounded py-3 px-4 font-manr border-primary border-2"
         />
       </div>
-      <div class="form-group flex flex-col mt-5">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="form-group flex flex-col mt-5"
+      >
         <label class="font-manr text-lg">Telefon raqamingiz:</label>
         <input
           v-model="message.phone"
@@ -39,7 +61,11 @@
           class="form-control outline-none rounded py-3 px-4 font-manr border-primary border-2"
         />
       </div>
-      <div class="form-group flex flex-col mt-5">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="form-group flex flex-col mt-5"
+      >
         <label class="font-manr text-lg">Murojaatingiz:</label>
         <textarea
           v-model="message.text"
@@ -48,6 +74,8 @@
         ></textarea>
       </div>
       <button
+        data-aos="fade-up"
+        data-aos-duration="1000"
         type="submit"
         class="form-submit btn-grad mb-2 mt-6 font-manr text-lg"
       >
@@ -88,7 +116,7 @@ let dFormat = `${d.getDate() > 9 ? d.getDate() : `0` + d.getDate()}/${
 
 const message = reactive({
   fullname: "",
-  phone: '+998',
+  phone: "+998",
   text: "",
 
   fullmessage: computed(

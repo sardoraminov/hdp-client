@@ -1,6 +1,6 @@
 <template>
   <div id="team" class="team-part">
-    <div class="part-titles mt-14 text-center mb-8">
+    <div data-aos="fade-up" class="part-titles mt-14 text-center mb-8">
       <h1 class="title text-[30px] font-extrabold font-mont inline-block">
         Jamoa
         <img :src="teamImg" class="w-8 inline-block mb-2 ml-1" alt="team" />
@@ -10,7 +10,11 @@
         jamoamiz haqida
       </p>
     </div>
-    <div class="part-carousel relative pb-10">
+    <div
+      data-aos="fade-up"
+      data-aos-delay="200"
+      class="part-carousel relative pb-10"
+    >
       <svg
         width="265"
         height="462"

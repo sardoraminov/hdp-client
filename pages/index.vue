@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="overflow-hidden">
     <TheHeader />
     <main class="main-content sm:px-20 px-4 relative overflow-hidden">
       <svg

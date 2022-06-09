@@ -1,9 +1,10 @@
 <template>
   <div class="header-part">
-    <div class="header-img">
+    <div data-aos="fade-right" class="header-img">
       <img :src="pretty" alt="pretty-girl" />
     </div>
     <div
+    data-aos="fade-left"
       class="header-content flex flex-col justify-between md:px-16 md:py-12 py-8 sm:px-10 px-5 w-[45%] h-full absolute right-0 top-0 bg-white"
     >
       <h1 class="c-logo">

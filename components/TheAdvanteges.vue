@@ -1,9 +1,10 @@
 <template>
-  <div
-    id="advanteges"
-    class="advantege-part pb-6"
-  >
-    <div data-aos="fade-up" class="part-titles mt-7 text-center mb-8">
+  <div id="advanteges" class="advantege-part pb-6">
+    <div
+      data-aos="fade-up"
+      data-aos-offset="200"
+      class="part-titles mt-7 text-center mb-8"
+    >
       <h1 class="title text-[30px] font-extrabold font-mont inline-block">
         Afzalliklar
         <img :src="champ" class="w-8 inline-block mb-2 ml-1" alt="champ" />
@@ -42,14 +43,16 @@
         </defs>
       </svg>
 
-      <section class="section rounded mb-8">
+      <section data-aos="fade-up" class="section rounded mb-8">
         <div
+          data-aos="fade-up"
           class="section-title rounded-t bg-primary text-xl px-6 py-5 text-white flex flex-row items-center"
         >
           <ion-icon name="book-outline"></ion-icon>
           <p class="ml-3 font-bold">Darsliklar mavjudligi</p>
         </div>
         <div
+          data-aos="fade-up"
           class="section-body bg-white overflow-hidden rounded-b border-b-2 border-l-2 border-r-2 border-primary font-medium relative space-y-6 px-6 py-4 pb-6 text-[18px]"
         >
           <p>
@@ -116,14 +119,19 @@
           </linearGradient>
         </defs>
       </svg>
-      <section class="section relative overflow-hidden rounded mb-8">
+      <section
+        data-aos="fade-up"
+        class="section relative overflow-hidden rounded mb-8"
+      >
         <div
+          data-aos="fade-up"
           class="section-title rounded-t bg-primary text-xl px-6 py-5 text-white flex flex-row items-center"
         >
           <ion-icon name="compass-outline"></ion-icon>
           <p class="ml-3 font-bold">Markazimiz joylashuvi qulayligi</p>
         </div>
         <div
+          data-aos="fade-up"
           class="section-body bg-white overflow-hidden rounded-b border-b-2 border-l-2 border-r-2 border-primary font-medium relative space-y-6 px-6 py-4 pb-6 text-[18px]"
         >
           <p>
@@ -182,14 +190,16 @@
         </defs>
       </svg>
 
-      <section class="section overflow-hidden rounded mb-8">
+      <section data-aos="fade-up" class="section overflow-hidden rounded mb-8">
         <div
+          data-aos="fade-up"
           class="section-title rounded-t bg-primary text-xl px-6 py-5 text-white flex flex-row items-center"
         >
           <ion-icon name="trophy-outline"></ion-icon>
           <p class="ml-3 font-bold">Yaratilgan sharoitlar</p>
         </div>
         <div
+          data-aos="fade-up"
           class="section-body bg-white overflow-hidden rounded-b border-b-2 border-l-2 border-r-2 border-primary font-medium relative space-y-6 px-6 py-4 pb-6 text-[18px]"
         >
           <p>
@@ -229,14 +239,16 @@
         <circle cx="200" cy="200" r="200" fill="#00B4D8" fill-opacity="0.12" />
       </svg>
 
-      <section class="section overflow-hidden rounded mb-8">
+      <section data-aos="fade-up" class="section overflow-hidden rounded mb-8">
         <div
+          data-aos="fade-up"
           class="section-title rounded-t bg-primary text-xl px-6 py-5 text-white flex flex-row items-center"
         >
           <ion-icon name="star-outline"></ion-icon>
           <p class="ml-3 font-bold">Sifat, metodika, nazorat</p>
         </div>
         <div
+          data-aos="fade-up"
           class="section-body bg-white overflow-hidden rounded-b border-b-2 border-l-2 border-r-2 border-primary font-medium relative space-y-6 px-6 py-4 pb-6 text-[18px]"
         >
           <ul class="space-y-3">
