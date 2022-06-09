@@ -37,6 +37,7 @@
       <TheTeam />
       <TheQuestions />
       <TheAboutExam />
+      <TheContact/>
     </main>
   </div>
 </template>

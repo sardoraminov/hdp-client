@@ -58,7 +58,7 @@
         <div
           @click="openOne(0)"
           :class="[
-            'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t text-xl px-6 py-5 flex flex-row justify-between',
+            'section-title relative hover:bg-primary hover:border-none hover:text-white cursor-pointer rounded-t text-xl px-6 py-5 flex flex-row justify-between',
             opens[0] === true
               ? 'bg-primary text-white '
               : 'bg-white text-black border border-gray',
@@ -90,7 +90,7 @@
         <div
           @click="openOne(1)"
           :class="[
-            'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
+            'section-title relative hover:bg-primary  hover:border-none hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
             opens[1] === true
               ? 'bg-primary text-white '
               : 'bg-white text-black border border-gray',
@@ -126,7 +126,7 @@
         <div
           @click="openOne(2)"
           :class="[
-            'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
+            'section-title relative hover:bg-primary hover:border-none hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
             opens[2] === true
               ? 'bg-primary text-white '
               : 'bg-white text-black border border-gray',
@@ -155,7 +155,7 @@
         <div
           @click="openOne(3)"
           :class="[
-            'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
+            'section-title relative hover:bg-primary hover:border-none hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
             opens[3] === true
               ? 'bg-primary text-white '
               : 'bg-white text-black border border-gray',
@@ -186,7 +186,7 @@
         <div
           @click="openOne(4)"
           :class="[
-            'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
+            'section-title relative hover:bg-primary hover:border-none hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
             opens[4] === true
               ? 'bg-primary text-white '
               : 'bg-white text-black border border-gray',
@@ -217,7 +217,7 @@
         <div
           @click="openOne(5)"
           :class="[
-            'section-title relative hover:bg-primary hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
+            'section-title relative hover:bg-primary hover:border-none hover:text-white cursor-pointer rounded-t  text-xl px-6 py-5 flex flex-row justify-between',
             opens[5] === true
               ? 'bg-primary text-white '
               : 'bg-white text-black border border-gray',
