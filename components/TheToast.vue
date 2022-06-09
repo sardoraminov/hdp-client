@@ -1,6 +1,6 @@
 <template>
   <div class="notification">
-    <p data-aos="fade-up">{{ message }}</p>
+    <p data-aos="fade-up" class="shadow-lg">{{ message }}</p>
   </div>
 </template>
 
@@ -16,14 +16,13 @@ const props = defineProps({
 <style scpoped>
 .notification {
   position: fixed;
-  top: 34px;
+  bottom: 34px;
   left: 50%;
   right: 50%;
   width: 100%;
   height: auto;
   transform: translate(-50%, -50%);
   z-index: 9999;
-  border-bottom: 2px solid #00b4d8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,6 +35,7 @@ const props = defineProps({
   font-family: "Manrope", sans-serif;
   font-size: 18px;
   animation: fade 0.5s ease-in-out;
+  margin: 0 20px;
 }
 
 @keyframes fade {

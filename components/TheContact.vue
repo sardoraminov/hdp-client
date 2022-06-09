@@ -76,11 +76,25 @@
 <script setup>
 import contact from "~/assets/img/contact.png";
 import TheToast from "./TheToast.vue";
+import axios from "axios";
+
+// DATE FORMAT
+let d = new Date();
+let dFormat = `${d.getDate() > 9 ? d.getDate() : `0` + d.getDate()}/${
+  d.getMonth() + 1 > 9 ? d.getMonth() + 1 : `0` + (d.getMonth() + 1)
+}/${d.getFullYear()} ${d.getHours() > 9 ? d.getHours() : `0` + d.getHours()}:${
+  d.getMinutes() > 9 ? d.getMinutes() : `0` + d.getMinutes()
+}`;
 
 const message = reactive({
   fullname: "",
-  phone: "",
+  phone: 0,
   text: "",
+
+  fullmessage: computed(
+    () =>
+      `#murojaat\n\n 👤Murojaatchi: <b>${message.fullname}</b>\n 📞Telefon: <b>${message.phone}</b>\n 📃Murojaat: <b>${message.text}</b>\n\n 🕛<b>${dFormat}</b>`
+  ),
 });
 
 const toastOptions = reactive({
@@ -88,24 +102,32 @@ const toastOptions = reactive({
   message: "",
 });
 
-let d = new Date();
+const token = "5324015557:AAEOXQ0OmWDSApssM-5YqTSMV51l15Du5b4";
+const chat_id = 1918027338;
+const endpoint = ref(`https://api.telegram.org/bot${token}/sendMessage`);
 
-let dFormat = `${d.getDate() > 9 ? d.getDate() : `0` + d.getDate()}/${
-  d.getMonth() + 1 > 9 ? d.getMonth() + 1 : `0` + (d.getMonth() + 1)
-}/${d.getFullYear()} ${d.getHours() > 9 ? d.getHours() : `0` + d.getHours()}:${
-  d.getMinutes() > 9 ? d.getMinutes() : `0` + d.getMinutes()
-}`;
-
-const fullmessage = `#murojaat %0A Murojaatchi: <b>${message.fullname}</b> %0A Telefon: <b>${message.phone}</b> %0A Murojaat: <b>${message.text}</b> %0A <b>${dFormat}</b>`;
-
+// SEND MESSAGE
 const sendMessage = (e) => {
   e.preventDefault();
+  axios
+    .post(
+      endpoint.value,
+      { chat_id, text: message.fullmessage, parse_mode: "html" },
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    )
+    .then((res) => {
+      console.log(res.data);
+    });
   toastOptions.show = true;
-  toastOptions.message = "Murojaat yuborildi!";
+  toastOptions.message = `Hurmatli ${message.fullname}, sizning murojaatingiz adminstratsiyaga yuborildi!`;
 
   setTimeout(() => {
     toastOptions.show = false;
   }, 4000);
-  console.log(message);
+  console.log(message.fullmessage);
 };
 </script>
