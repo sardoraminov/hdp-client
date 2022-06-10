@@ -100,7 +100,6 @@ import { Carousel, Navigation, Slide } from "vue3-carousel";
 
 import "vue3-carousel/dist/carousel.css";
 import team1 from "~/assets/img/jamoa-1.jpg";
-import team2 from "~/assets/img/jamoa-2.jpg";
 import team3 from "~/assets/img/jamoa-3.jpg";
 import team4 from "~/assets/img/jamoa-4.jpg";
 import team5 from "~/assets/img/jamoa-5.jpg";
@@ -116,12 +115,6 @@ const team = [
     about:
       "Urganch Davlat Universiteti Iqtisodiyot Bakalavriyati hamda Germaniyaning Weihenstephen universiteti magistranti. Ayni damda HDP LC asoschisi va rahbari hamdir. Sohada 9 yillik tajribaga ega. 1000 dan ortiq shogirdlari nufuzli universitetlarda tahsil olib kelishmoqda",
     img: team1,
-  },
-  {
-    teacher: "Fayzullayev Bexzodbek",
-    science: "Matematika o'qituvchisi",
-    about: `UrDU Fizika-Matematika bakalavriyat hamda magistranti. Xalqaro "AKHIMO" olimpiadasida bronza, 2021-yil Sankt-Peterburg olimpiadasida kumush va "ITMO" turnirida oltin medallari sohibi. Fanda olimpiadaga tayyorlash bo'yicha 3 yillik tajribaga ega`,
-    img: team2,
   },
   {
     teacher: "Erkinboyev Shoxruh",
